@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 17, 2017 at 07:46 PM
+-- Generation Time: May 17, 2017 at 09:55 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -41,19 +41,26 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `first_name`, `last_name`, `email`, `password`, `avatar`, `join_date`) VALUES
-(1, '', '', '', '', '', '2017-05-15 17:06:05'),
-(2, '', '', '', '', '', '2017-05-15 17:06:05'),
-(3, '', '', '', '', '', '2017-05-15 17:07:51'),
-(4, '', '', '', '', '', '2017-05-15 17:07:51'),
-(5, '', '', '', '', '', '2017-05-15 17:07:51'),
-(6, '', '', '', '', '', '2017-05-15 17:07:51'),
-(7, '', '', '', '', '', '2017-05-15 17:07:51'),
-(8, 'Michelle', 'Smith', 'michelle@gmail.com', '1234', 'images/sandy.jpg', '2017-05-15 18:31:15'),
-(9, 'Ben', 'Barro', 'ben@gmail.com', '1234', 'images/ben.jpg', '2017-05-15 18:31:15'),
-(10, 'William', 'Terry', 'william@gmail.com', '1234', 'images/william.jpg', '2017-05-15 18:31:15'),
-(11, 'Sarah', 'Thompson', 'sarah@gmail.com', '1234', 'images/sarah.jpg', '2017-05-15 18:31:15'),
-(12, 'Donald', 'Duck', 'donald@gmail.com', '1234', 'images/donald.jpg', '2017-05-15 18:31:15'),
-(13, 'Beth', 'McAdams', 'beth@gmail.com', '1234', 'images/beth.jpg', '2017-05-15 18:31:15');
+(1, 'Michelle', 'Smith', 'michelle@gmail.com', '1234', 'images/sandy.jpg', '2017-05-15 18:31:15'),
+(2, 'Ben', 'Barro', 'ben@gmail.com', '1234', 'images/ben.jpg', '2017-05-15 18:31:15'),
+(3, 'William', 'Terry', 'william@gmail.com', '1234', 'images/william.jpg', '2017-05-15 18:31:15'),
+(4, 'Sarah', 'Thompson', 'sarah@gmail.com', '1234', 'images/sarah.jpg', '2017-05-15 18:31:15'),
+(5, 'Donald', 'Duck', 'donald@gmail.com', '1234', 'images/donald.jpg', '2017-05-15 18:31:15'),
+(6, 'Beth', 'McAdams', 'beth@gmail.com', '1234', 'images/beth.jpg', '2017-05-15 18:31:15'),
+(7, 'Henry', 'Wallace', 'henry@gmail.com', '1234', 'images/henry.jpg', '2014-02-21 00:58:41'),
+(8, 'Corin', 'Sabbath', 'corin@gmail.com', '1234', 'images/corin.jpg', '2014-02-21 00:58:41'),
+(9, 'George', 'Harris', 'george@yahoo.com', '1234', 'images/george.jpg', '2014-02-21 01:02:28'),
+(10, 'Karen', 'White', 'karen@aol.com', '1234', 'images/karen.jpg', '2014-02-21 01:02:28'),
+(11, 'Warren', 'Bartlet', 'warren@gmail.com', '1234', 'images/warren.jpg', '2014-02-21 01:07:19'),
+(12, 'Steven', 'Wright', 'stevewright@aol.com', '1234', 'images/steve.jpg', '2014-02-21 01:07:19'),
+(13, 'Bob', 'Sacramento', 'bob@yahoo.com', '1234', 'images/bob.jpg', '2014-02-21 01:07:19'),
+(14, 'Shawn', 'Hurley', 'hurley@gmail.com', '1234', 'images/hurley.jpg', '2014-02-21 01:07:19'),
+(15, 'Mark', 'Roast', 'mark@gmail.com', '1234', 'images/mark.jpg', '2014-02-21 01:07:19'),
+(16, 'Barry', 'White', 'barrywhite@gmail.com', '1234', 'images/barry.jpg', '2014-02-21 01:07:19'),
+(17, 'Roland', 'Groburg', 'roland@yahoo.com', '1234', 'images/roland.jpg', '2014-02-21 01:07:19'),
+(18, 'Christian', 'Hayhouse', 'christian@gmail.com', '1234', 'images/christian.jpg', '2014-02-21 01:07:19'),
+(19, 'Kelly', 'Bark', 'kelly@gmail.com', '1234', 'images/kelly.jpg', '2014-02-21 01:07:19'),
+(20, 'Greg', 'Thompson', 'greg@yahoo.com', '1234', 'images/greg.jpg', '2014-02-21 01:07:19');
 
 -- --------------------------------------------------------
 
@@ -76,12 +83,22 @@ CREATE TABLE `customer_addresses` (
 --
 
 INSERT INTO `customer_addresses` (`id`, `customer`, `address`, `address2`, `city`, `state`, `zipcode`) VALUES
-(1, 1, '10 Main st', '', 'Boston', 'MA', '01929'),
-(2, 2, '20 Main st', 'Apt 3', 'New York', 'NY', '01929'),
-(3, 3, '30 Main st', '', 'Seaside Heights', 'NJ', '01929'),
-(4, 4, '40 Main st', 'Unit 10', 'Baltimore', 'MD', '01929'),
-(5, 5, '50 Main st', 'Apt 18', 'Miami', 'FL', '01929'),
-(6, 6, '60 Main st', '', 'Chicago', 'IL', '01929');
+(1, 1, '10 Albany st', '', 'Boston', 'MA', '02201'),
+(2, 2, '12 Rushmont st', 'Apt 3', 'New York City', 'NY', '10026'),
+(3, 3, '33 Vernon st', '', 'Seaside Heights', 'NJ', '08751'),
+(4, 4, '22 Market st', 'Unit 10', 'Baltimore', 'MD', '21075'),
+(5, 5, '404 Dorch Ave', 'Apt 18', 'Miami', 'FL', '33010'),
+(6, 6, '110 Montvale Ave', '', 'Chicago', 'IL', '60652'),
+(25, 7, '605 Mass Ave', 'Apt 12', 'Boston', 'MA', '02201'),
+(26, 8, '99 Pots Way', '', 'Chicago', 'IL', '60632'),
+(27, 9, '55 Pond St', 'Unit 66', 'Miami', 'FL', '33010'),
+(28, 10, '777 Moxy Rd', '', 'Baltimore', 'MD', '21075'),
+(29, 11, '44 Main St', '', 'Amesbury', 'MA', '01913'),
+(30, 12, '77 Carriage Hill Rd', 'Building 4, Apt 8', 'Amesbury', 'MA', '01913'),
+(31, 13, '77 Seymore Lane', '', 'Chicago', 'IL', '60632'),
+(32, 14, '99 Barns Ave', 'Building 12, Apt 22', 'New York City', 'NY', '10026'),
+(33, 15, '88 Woodbury Ave', 'Apt 6', 'New York City', 'NY', '10027'),
+(34, 16, '444 Vale Rd', '', 'New York City', 'NY', '10028');
 
 -- --------------------------------------------------------
 
@@ -103,7 +120,32 @@ INSERT INTO `orders` (`id`, `customer`, `product`) VALUES
 (1, 1, 5),
 (2, 2, 6),
 (3, 1, 12),
-(4, 6, 10);
+(4, 6, 10),
+(5, 1, 7),
+(6, 2, 12),
+(7, 3, 6),
+(8, 4, 13),
+(9, 18, 1),
+(10, 11, 5),
+(11, 12, 10),
+(12, 8, 5),
+(13, 18, 5),
+(14, 17, 8),
+(15, 16, 5),
+(16, 10, 12),
+(17, 16, 1),
+(18, 15, 12),
+(19, 12, 12),
+(20, 10, 5),
+(21, 11, 4),
+(22, 14, 13),
+(23, 15, 4),
+(24, 13, 11),
+(25, 1, 11),
+(26, 3, 4),
+(27, 15, 3),
+(28, 16, 1),
+(29, 2, 11);
 
 -- --------------------------------------------------------
 
@@ -171,26 +213,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `description`, `price`, `category`, `image`, `create_date`) VALUES
-(1, 'Android Phone', 'This is an Android based smartphone', '300', 1, '', '2017-05-15 16:39:07'),
-(5, '', '', '0', 1, '', '2017-05-15 17:09:15'),
-(6, '', '', '0', 1, '', '2017-05-15 17:09:15'),
-(7, '', '', '0', 1, '', '2017-05-15 17:11:50'),
-(8, '', '', '0', 1, '', '2017-05-15 17:11:50'),
-(9, '', '', '0', 1, '', '2017-05-15 17:11:50'),
-(10, '', '', '0', 1, '', '2017-05-15 17:11:50'),
-(11, '', '', '0', 1, '', '2017-05-15 17:11:50'),
-(12, '', '', '0', 1, '', '2017-05-15 17:11:59'),
-(35, 'Microsoft Surface Tablet', 'Microsoft Surface Pro with 128GB Memory', '500', 1, 'images/surface.jpg', '2017-05-15 18:26:30'),
-(36, 'Nextbook Tablet', 'Nextbook 7 inch Tablet 8GB Memory', '100', 1, 'images/nextbook.jpg', '2017-05-15 18:26:30'),
-(37, 'Philips BTM2180/37 Micro Music System', 'Wireless music streaming via Bluetooth', '150', 1, 'images/stereo.jpg', '2017-05-15 18:26:30'),
-(38, 'Memorex Boombox', 'Memorex MP3142 - BoomBox', '46', 1, 'images/boombox.jpg', '2017-05-15 18:26:30'),
-(39, 'Mossy Oak Infinity Seat Cover', 'High Quality, heavy mossy oak infinity seat cover', '20', 6, 'images/seatcover1.jpg', '2017-05-15 18:26:30'),
-(40, 'Remington Floor Mat Set', 'Remington Best Fashion Carpet Floor Mat Set Tan 4pc', '30', 1, 'images/floormat.jpg', '2017-05-15 18:26:30'),
-(41, 'Rawlings RGB36 Baseball Glove', 'Rawlings RGB36 Baseball Glove 12 inch', '30', 5, 'images/glove1.jpg', '2017-05-15 18:26:30'),
-(42, 'Frankling Pro Batting Floves', 'Franklin Sports MLB Shok-Sorb Pro Batting Glove Pair', '20', 5, 'images/glove2.jpg', '2017-05-15 18:26:30'),
-(43, 'Golds Gym Trainer 420', 'New Gold\'s Gym Trainer 420 Treadmill with bonus prize mat', '377', 5, 'images/treadmill.jpg', '2017-05-15 18:26:30'),
-(44, 'Weslo Cadence G 5.9 Treadmill', 'Weslo Cadence G 5.9 Treadmill', '287', 5, 'images/treadmill2.jpg', '2017-05-15 18:26:30'),
-(45, 'Golds Gym Trainer 315 Treadmill', 'Golds Gym Trainer 315 Treadmill', '258', 5, 'images/treadmill3.jpg', '2017-05-15 18:26:30');
+(1, 'Android Phone', 'This is an Android based smartphone', '300', 1, '', '2014-02-18 17:34:13'),
+(3, 'Microsoft Surface Tablet', 'Microsoft Surface Pro with 128GB Memory', '500', 1, 'images/surface.jpg', '2014-02-19 00:51:47'),
+(4, 'Nextbook Tablet', 'Nextbook 7 inch Tablet 8GB Memory', '100', 1, 'images/nextbook.jpg', '2014-02-19 00:51:47'),
+(5, 'Philips BTM2180/37 Micro Music System', 'Wireless music streaming via Bluetooth', '150', 1, 'images/stereo.jpg', '2014-02-19 00:51:47'),
+(6, 'Memorex Boombox', 'Memorex MP3142 - Boombox', '46', 1, 'images/boombox.jpg', '2014-02-19 00:51:47'),
+(7, 'Mossy Oak Infinity Seat Cover', 'High quality, heavy Mossy Oak Infinity Seat Cover', '20', 6, 'images/seatcover1.jpg', '2014-02-19 00:51:47'),
+(8, 'Remington Floor Mat Set', 'Remington Best Fashion Carpet Floor Mat Set Tan 4pc', '30', 1, 'images/floormat1.jpg', '2014-02-19 00:51:47'),
+(9, 'Rawlings RBG36 Baseball Glove', 'Rawlings RBG36 Baseball Glove 12 inch', '30', 5, 'images/glove1.jpg', '2014-02-19 00:51:47'),
+(10, 'Franklin Pro Batting Gloves', 'Franklin Sports MLB Shok-Sorb Pro Batting Glove Pair', '20', 5, 'images/glove2.jpg', '2014-02-19 00:51:47'),
+(11, 'Golds Gym Trainer 420', 'NEW Gold\'s Gym Trainer 420 Treadmill with Bonus Puzzle Mat', '377', 5, 'images/treadmill1.jpg', '2014-02-19 00:51:47'),
+(12, 'Weslo Cadence G 5.9 Treadmill', 'Weslo Cadence G 5.9 Treadmill', '287', 5, 'images/treadmill2.jpg', '2014-02-19 00:51:47'),
+(13, 'Golds Gym Trainer 315 Treadmill', 'Gold\'s Gym Trainer 315 New Model Treadmill', '258', 5, 'images/treadmill3.jpg', '2014-02-19 00:51:47');
 
 -- --------------------------------------------------------
 
@@ -210,12 +244,12 @@ CREATE TABLE `product_categories` (
 --
 
 INSERT INTO `product_categories` (`id`, `name`, `description`, `image`) VALUES
-(1, 'Electronics', 'This is the electronics category', 'images/electronic.jpg'),
+(1, 'Electronics', 'This is the electronics category', 'images/electronics.jpg'),
 (3, 'Fashion', 'The latest fashions and accessories', 'images/fashion.jpg'),
 (4, 'Music', 'Music instruments and albums', 'images/music.jpg'),
-(5, 'Sports', 'Sporting equipment and jerseys', 'images/sports.jpg'),
-(7, 'Home and Garden', 'Products for your home', 'images/home.jpg'),
-(8, 'Auto', 'Auto parts and accessories', 'images/autos.jpg');
+(5, 'Sporting Goods', 'Jerseys, equipment and more', 'images/sports.jpg'),
+(6, 'Auto', 'Auto parts and accessories', 'images/auto.jpg'),
+(7, 'Home & Garden', 'Products for your home', 'images/home.jpg');
 
 -- --------------------------------------------------------
 
@@ -241,7 +275,11 @@ INSERT INTO `reviews` (`id`, `title`, `body`, `rating`, `customer`, `product`, `
 (5, 'Great Product', 'This product was great', 9, 1, 1, '2017-05-15 18:35:52'),
 (6, 'Okay Product', 'This product was okay', 6, 1, 2, '2017-05-15 18:35:52'),
 (7, 'Decent Product', 'This product was decent', 8, 3, 4, '2017-05-15 18:35:52'),
-(8, 'Bad Product', 'This product was really bad', 2, 5, 4, '2017-05-15 18:35:52');
+(8, 'Bad Product', 'This product was really bad', 2, 5, 4, '2017-05-15 18:35:52'),
+(9, 'Great Product', 'This product was great', 9, 2, 6, '2014-02-19 01:22:33'),
+(10, 'Okay Product', 'This product was okay', 6, 1, 5, '2014-02-19 01:22:33'),
+(11, 'Decent Product', 'This product was decent', 8, 1, 12, '2014-02-19 01:22:33'),
+(12, 'Bad Product', 'This product was really bad', 2, 6, 10, '2014-02-19 01:22:33');
 
 --
 -- Indexes for dumped tables
@@ -311,17 +349,17 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `customer_addresses`
 --
 ALTER TABLE `customer_addresses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `pages`
 --
@@ -346,7 +384,7 @@ ALTER TABLE `product_categories`
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- Constraints for dumped tables
 --
